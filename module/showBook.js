@@ -1,7 +1,7 @@
 import Data from './addLocal.js';
 
 export default class BookMain {
-  static #booksHtml(book) {
+  static #booksHtml = (book) => {
     const booksHtml = `
         <td class="author">${book.author}</td>
         <td class="title">${book.title}</td>
@@ -10,7 +10,7 @@ export default class BookMain {
     return booksHtml;
   }
 
-  static showBook(container, book) {
+  static showBook = (container, book) => {
     const row = document.createElement('tr');
     row.classList.add('book-info');
     row.innerHTML = BookMain.#booksHtml(book);
@@ -24,11 +24,11 @@ export default class BookMain {
     });
   }
 
-  static removeBook(btn) {
+  static removeBook = (btn) => {
     btn.parentElement.parentElement.remove();
   }
 
-  static showBooks(container) {
+  static showBooks = (container) => {
     const books = Data.getData();
     books.forEach((book) => {
       BookMain.showBook(container, book);

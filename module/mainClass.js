@@ -5,7 +5,7 @@ export default class Books {
     this.author = author;
   }
 
-  getBookDetails() {
+  getBookDetails = () => {
     return { title: this.title, author: this.author };
   }
 }
