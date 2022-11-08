@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Book with ES6</title>
+
+    <!-- script links -->
+    <script src="index.js" type="module"></script>
+    <!-- style link -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <h2>Awesome Book</h2> 
+        <ul class="liksToSections">
+          <li class="nav-ul active"><a class="nav-link active"href="#list" data-trigger="list" aria-current="pages">Books List</a></li>
+          <li class="nav-ul"><a class="nav-link"href="#add-book" data-trigger="add-book" aria-current="pages">Add Book</a></li>
+          <li class="nav-ul"><a class="nav-link"href="#contact" data-trigger="contact" aria-current="pages">Contact</a></li>
+        </ul>
+    </header>
+    <main class="main-content">
+        <span class="date"></span>
+        <section class="page pages book-list current" id="list">
+          <h2 class="list-title"> All Books List</h2>
+          <table class="table" cellspacing = "0"> 
+            <tbody class="collections"></tbody>
+          </table>
+        </section>
+        <section class="addform page pages" id="add-book">
+          <div class="form-container">
+            <h2 class="form-title">Add a new book</h2>
+            <form class="book-form">
+              <ul class="form-ul">
+                <li><input type="text" class="author" name="author" id="author" required placeholder="Title"></li>
+                <li><input type="text"  class="title" name="title" id="title" required placeholder="Author"></li>
+                <button type="submit" name="add" id="add" class="add btn">Add</button>           
+              </ul>
+            </form>
+          </div>
+        </section>
+        
+        <section class="contact page pages" id="contact">
+          <div class="" >
+            <h2 class="contact-title">Contact Information</h2>
+            <p class="contact-p">Do have any questions or you just want to say "Hello"?<br> You can reach out to us!</p>
+            <ul>
+              <li>Our e-mail: mail@mail.ru</li>
+              <li>Out phone number: +0123456789</li>
+              <li>Our address: Lorem 11, 4134 Ipsum, Lorem Ipsum</li>
+            </ul>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-cont">
+          <h2 class="footer-h2">Awesome books</h2>
+          <p class="footer-p">© Awesome Books All rights reserved.</p>
+        </div>
+    </footer>
+  
+</body>
+</html>
